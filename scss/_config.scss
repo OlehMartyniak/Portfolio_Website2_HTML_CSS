@@ -1,0 +1,30 @@
+// Config
+$primary-color: #047aed;
+$text-color: #fff;
+$secondary-color: #1c3fa8;
+$dark-color: #002240;
+$light-color: #f4f4f4; 
+$success-color: #5cb85c;
+$error-color: #d9534f;
+
+// Media Query Mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content
+    }
+};
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content
+    }
+};
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content
+    }
+};
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content
+    }
+};
